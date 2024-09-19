@@ -1,0 +1,74 @@
+
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(./Images/greenandblck.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.registration-container {
+    width: 420px;
+    background:transparent;
+    color:#fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:(24, 97, 24);
+}
+
+.registration-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:#fff;
+}
+
+.registration-form input{
+    padding: 10px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+.registration-form button {
+    padding: 10px;
+    background-color:rgb(24, 97, 24);
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.registration-form button:hover {
+    background-color:black;
+}
+
+.registration-form a {
+    color: #000;
+    text-decoration: none;
+}
+
+.registration-form a:hover {
+    text-decoration: underline;
+}
+.registration-container label a{
+    color: #fff;
+}

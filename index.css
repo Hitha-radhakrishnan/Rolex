@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+}
+header{
+    background-color: rgb(0, 96, 57);
+    display: grid;
+    height:100px;
+    align-content: center;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+nav{
+    grid-template-columns: repeat(3,1fr);
+    display:grid;
+    color: #fff;
+    background-color: rgb(0, 96, 57);
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+nav ul a:hover{
+    text-decoration:underline;
+}
+nav ul{
+    list-style: none;
+}
+.menu{
+    display: grid;
+    padding-left: 50px;
+    color: #fff;
+    margin-top: 15px;
+}
+.logo{
+    display: grid;
+    justify-content: center;
+}
+.logo img{
+    height:50px;
+    margin-top: 5px;
+}
+.right{
+   display:grid;
+   grid-template-columns: repeat(4,1fr);
+   margin-top: 15px;
+}
+.video-container{
+    position:relative;
+}
+ video{
+    height:auto;
+    width:100%;
+    object-fit: contain;
+ }
+ .text-overlay{
+    position:absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:white;
+    top:25%;
+    left:50%;
+    transform:translate(-50%,-50%);
+ }
+ .text-overlay h1{
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    top:20%;
+ }
+.text-overlay h3{
+    font-size: 24px;
+    font-weight: normal;
+    top:50%;
+    margin-top: 100px;
+}
+.para{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.para h1{
+    padding-left: 100px;
+    color:rgb(0, 96, 57);
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.para p{
+    padding-left: 50px;
+    line-height: 30px;
+    font-size:larger;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #808080;
+}
+
+.between{
+    display: grid;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    padding-bottom: 20px;
+    grid-gap:10px;
+    position: sticky;
+    top:20%;
+    z-index: 2;
+    
+}
+.between ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.between .btn{
+    margin-left: 100px;
+    background-color:rgb(0, 96, 57); 
+    color:#fff;
+}
+.btn{
+    color: #fff;
+    border-radius: 20px;
+    padding:8px;
+}
+.between a{
+    text-decoration: none;
+    color: black;
+}
+
+.between li{
+    list-style-type: none;
+}
+.image-container{
+    display:grid;
+    height:500vh;
+    width:100%;
+    grid-template-rows: repeat(8,1fr);
+}
+.img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8{
+    overflow: hidden;
+    position: relative;
+}
+.img1 img,.img2 img,.img3 img,.img4 img,.img5 img,.img6 img,.img7 img,.img8 img{
+    display: block;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    object-fit: cover;
+    top:0;
+    left:0;
+
+    opacity:0;
+    transition:0.0s;
+}
+
+.img1 img:hover,.img2 img:hover,.img3 img:hover,.img4 img:hover,.img5 img:hover,.img6 img:hover,.img7 img:hover,.img8 img:hover{
+    opacity:1
+}
+
+.image-container h2{
+    top: 50px;
+    font-size:26px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.image-container h4{
+top:50px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:18px;    
+}
+.black{
+    font-size: 50px;
+    color:black;
+    position: absolute;
+    top:50%;
+    left:20%;
+    transform: translate(-50%,-50%);
+    text-align: start;
+    line-height: 60px;
+}
+.white{
+    font-size: 50px;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left:20%;
+    transform: translate(-50%,-50%);
+    text-align: start;
+    line-height: 60px;
+}
+.black h2{
+    font-size: 40px;
+}
+.black h4{
+    font-weight: lighter;
+    font-size: 20px;
+}
+.white h2{
+    font-size: 40px;
+}
+.white h4{
+    font-weight: lighter;
+    font-size: 20px;
+}
+.icons{
+    display: grid;
+    justify-content:start;
+}
+.icons ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap:10px;
+    padding:50px;
+}
+.icons ul li{
+    list-style-type: none;
+}
+.icons ul li a{
+    color: rgb(0, 96, 57);
+    font-size: 25px;
+}
+
+.footer-contaniner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+    background-color: #f8f8f8; 
+    color:black;
+}
+
+.footer-contaniner ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.footer-contaniner li {
+    margin-bottom: 10px; 
+}
+
+.footer-contaniner a {
+    text-decoration: none; 
+    color:black;
+}
+
+.footer-contaniner a:hover {
+    text-decoration: underline; 
+}
+
+.lastlogo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.lastlogo img {
+    height: 50px; 
+    margin-right: 10px; 
+}
+
+.lastlogo h1 {
+    font-size: 1.5em; 
+    color:black;
+}
+
+.footer-contaniner h1 {
+    font-size: 1.2em; 
+    margin-bottom: 10px; 
+}
+.third,.fourth{
+    list-style-type: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    padding: 20px; 
+    background-color: #f8f8f8; 
+    justify-content: center; 
+    padding-left: 100px;
+}
+
+.buttons ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: contents; 
+}
+
+.buttons li {
+    display: inline-block; 
+    width: 70%; 
+    
+}
+
+.buttons button {
+    width: 50%; 
+    padding: 10px; 
+    color:black; 
+    border: none; 
+    border-radius:none; 
+    cursor: pointer; 
+}
+
+.buttons button:hover {
+    text-decoration: underline; 
+}
+
+.buttons a {
+    text-decoration: none;
+    color: black; 
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+.img-container{
+    display: grid;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    height:400px;
+}
+.lastimage img{
+    width:100%;
+    height:auto;
+}
+.text-overlay2{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:white;
+    line-height: 50px;
+    font-weight: bold;
+}
+.text-overlay2 h1{
+    font-size: 36px;
+}
+.text-overlay2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.text-overlay2 a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+ 
